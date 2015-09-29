@@ -1,0 +1,29 @@
+# Copyright (C) 2015 Andrea Brandi
+# This file is distributed under the GNU General Public License v2.0 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Starsailor 2.0.0\n"
+"POT-Creation-Date: 2015-09-28 22:20:40+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: footer.php:13
+#, php-format
+msgid "Copyright &#169; 2008-%1$s %2$s. Written and maintained by %3$s."
+msgstr ""
+
+#: functions.php:94
+msgid "Widget Area"
+msgstr ""
+
+#: functions.php:96
+msgid "Add widgets here to make them appearing in header."
+msgstr ""
+
+#: header.php:13
+msgid "Skip to content"
+msgstr ""
