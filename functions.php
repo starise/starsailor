@@ -64,3 +64,12 @@ function starsailor_clean_hooks()
   remove_action('wp_head', 'hybrid_link_pingback', 3);
 }
 add_action('init', 'starsailor_clean_hooks');
+
+/**
+ * Enqueue/dequeue scripts and styles.
+ */
+function starsailor_scripts()
+{
+  wp_dequeue_style('saga-fonts');
+}
+add_action('wp_enqueue_scripts', 'starsailor_scripts', 11);
