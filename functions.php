@@ -83,3 +83,21 @@ function starsailor_excerpt_length($length)
 }
 remove_filter('excerpt_length', 'saga_excerpt_length');
 add_filter('excerpt_length', 'starsailor_excerpt_length', 999);
+
+/**
+ * Register widget area.
+ * @link https://codex.wordpress.org/Function_Reference/register_sidebar
+ */
+function starsailor_widgets_init()
+{
+  register_sidebar([
+    'name'          => __('Widget Area', 'starsailor'),
+    'id'            => 'primary',
+    'description'   => __('Add widgets here to make them appearing in header.', 'starsailor'),
+    'before_widget' => '<section id="%1$s" class="widget %2$s">',
+    'after_widget'  => '</section>',
+    'before_title'  => '<h2 class="widget-title">',
+    'after_title'   => '</h2>',
+  ]);
+}
+add_action('widgets_init', 'starsailor_widgets_init');
