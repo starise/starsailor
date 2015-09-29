@@ -73,3 +73,13 @@ function starsailor_scripts()
   wp_dequeue_style('saga-fonts');
 }
 add_action('wp_enqueue_scripts', 'starsailor_scripts', 11);
+
+/**
+ * Adds a custom excerpt length.
+ */
+function starsailor_excerpt_length($length)
+{
+  return 32;
+}
+remove_filter('excerpt_length', 'saga_excerpt_length');
+add_filter('excerpt_length', 'starsailor_excerpt_length', 999);
