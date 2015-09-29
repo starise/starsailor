@@ -17,3 +17,8 @@ h1, h2, h3, h4, h5, h6,
   font-family: 'Merriweather', sans-serif;
   line-height: 1.2;
 }
+
+/* Do not 'uppercase' title */
+#site-title > a {
+  text-transform: none;
+}
