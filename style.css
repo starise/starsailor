@@ -10,3 +10,10 @@
  * License:     MIT
  * Template:    saga
  */
+
+/* Headlines Font */
+h1, h2, h3, h4, h5, h6,
+.font-headlines {
+  font-family: 'Merriweather', sans-serif;
+  line-height: 1.2;
+}
