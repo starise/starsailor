@@ -54,3 +54,13 @@ function starsailor_theme_setup()
   );
 }
 add_action( 'after_setup_theme', 'starsailor_theme_setup' );
+
+/**
+ * Remove/modify hooks
+ */
+function starsailor_clean_hooks()
+{
+  add_filter('hybrid_meta_template', '__return_false');
+  remove_action('wp_head', 'hybrid_link_pingback', 3);
+}
+add_action('init', 'starsailor_clean_hooks');
