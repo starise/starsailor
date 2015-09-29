@@ -22,3 +22,35 @@ add_theme_support(
     'Playfair Display' => '400,400italic',
   ]
 );
+
+/**
+ * Setup function. All child themes should run their setup within this function. The idea is to add/remove
+ * filters and actions after the parent theme has been set up. This function provides you that opportunity.
+ */
+function starsailor_theme_setup()
+{
+  /*
+   * Add a custom background to overwrite the defaults.
+   * @link http://codex.wordpress.org/Custom_Backgrounds
+   */
+  add_theme_support(
+    'custom-background',
+    [
+      'default-color' => '2C3E50',
+      'default-image' => ''
+    ]
+  );
+
+  /*
+   * Add a custom header to overwrite the defaults.
+   * @link http://codex.wordpress.org/Custom_Headers
+   */
+  add_theme_support(
+    'custom-header',
+    [
+      'default-text-color' => 'dadada',
+      'default-image'      => ''
+    ]
+  );
+}
+add_action( 'after_setup_theme', 'starsailor_theme_setup' );
