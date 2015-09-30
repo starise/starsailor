@@ -1,0 +1,22 @@
+{
+  "name": "starise/starsailor",
+  "type": "wordpress-theme",
+  "license": "MIT",
+  "description": "Saga child theme built for Starsailor.it website.",
+  "homepage": "https://github.com/starise/starsailor",
+  "authors": [
+    {
+      "name": "Andrea Brandi",
+      "email": "info@stari.se",
+      "homepage": "http://stari.se"
+    }
+  ],
+  "keywords": [
+    "wordpress",
+    "theme"
+  ],
+  "require": {
+    "php": ">=5.5.0",
+    "composer/installers": "~1.0"
+  }
+}
