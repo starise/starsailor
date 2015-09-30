@@ -1,5 +1,7 @@
 # Starsailor
 
+![Starsailor](https://raw.githubusercontent.com/starise/starsailor/master/screenshot.png)
+
 Starsailor is a [Saga](https://github.com/justintadlock/saga) child theme built for [Starsailor.it](http://starsailor.it) website.
 
 ## Requirements
